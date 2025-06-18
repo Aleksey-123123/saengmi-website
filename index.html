@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAENGMI - 피부 마사지기</title>
+    <style>
+        body {
+            font-family: 'Noto Serif CJK KR', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        .hero {
+            background-color: #fff;
+            padding: 50px 20px;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+        .features, .benefits {
+            padding: 40px 20px;
+            background-color: #fff5e6;
+        }
+        h1, h2 {
+            font-weight: 500;
+        }
+        button {
+            background-color: #d3a47a;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #b08768;
+        }
+        @media (max-width: 768px) {
+            .hero, .features, .benefits {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="saengmi-logo.png" alt="SAENGMI 로고">
+        <h1>SAENGMI - 혁신적인 피부 마사지기</h1>
+        <img src="saengmi-device.png" alt="SAENGMI 피부 마사지기">
+        <button onclick="scrollToSection('features')">제품 특징 보기</button>
+    </div>
+    <div id="features" class="features">
+        <h2>제품 특징</h2>
+        <ul>
+            <li>RF (1MHz): 피부 깊숙이 열 전달</li>
+            <li>EMS: 근육 자극 및 강화</li>
+            <li>진동 (12000 rpm): 혈액 순환 개선</li>
+            <li>LED: 피부 톤 업 및 재생</li>
+        </ul>
+        <button onclick="scrollToSection('benefits')">효능 보기</button>
+    </div>
+    <div id="benefits" class="benefits">
+        <h2>효능</h2>
+        <ul>
+            <li>주름 개선</li>
+            <li>얼굴 윤곽 개선</li>
+            <li>근육 강화</li>
+            <li>혈액 순환 증가</li>
+            <li>피부 재생</li>
+            <li>여드름 제거</li>
+            <li>피부 클렌징</li>
+            <li>진정 효과</li>
+        </ul>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
